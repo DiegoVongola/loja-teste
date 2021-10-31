@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link  rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina de Produto</title>
+</head>
+<body>
+
+<header>
+  
+  <div class="flex flex-wrap place-items-center ">
+    <section class="relative mx-auto">
+        <!-- navbar -->
+      <nav class="flex justify-between bg-gradient-to-r from-purple-400 to-purple-900 text-white w-screen">
+        <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+          <a class="text-3xl font-bold font-heading" href="#">
+            <img class="h-16" src="\imagens\logo.png" alt="logo">
+            
+          </a>
+          <!-- links de navegação -->
+          <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+           <a class="hover:text-gray-200" href="#">Inicio</a>
+           <a class="hover:text-gray-200" href="#">Categorias</a>
+           <a class="hover:text-gray-200" href="#">Ofertas do dia</a>
+          <a class="hover:text-gray-200" href="#">Sobre nós</a>
+          </ul>
+
+  <div> 
+    <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full mr-2"> Entrar </button>
+    <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full"> Registrar </button>
+  </div>
+
+         
+  
+</header>  
+
+<!--  -->
+
+<section class="Main "> 
+
+    <div class="mt-20">
+        <div class="flex max-w-screen-2xl mx-auto">
+            <div class="flex-none w-4/12 relative">
+                <div class="carousel relative rounded relative overflow-hidden shadow-xl">
+                    <div class="carousel-inner relative overflow-hidden w-full">
+                      <!--Imagem 1-->
+                      <input
+                        class="carousel-open"
+                        type="radio"
+                        id="carousel-1"
+                        name="carousel"
+                        aria-hidden="true"
+                        hidden=""
+                        checked="checked"
+                      />
+                      <div
+                        class="carousel-item absolute opacity-0 bg-center"
+                        style="
+                          height: 500px;
+                          background-image: url(/imagens/imagem1.png);
+                        "
+                      ></div>
+                      <label
+                        for="carousel-3"
+                        class="
+                          control-1
+                          w-10
+                          h-10
+                          ml-2
+                          md:ml-10
+                          absolute
+                          cursor-pointer
+                          hidden
+                          font-bold
+                          text-black
+                          hover:text-white
+                          rounded-full
+                          bg-white
+                          hover:bg-purple-700
+                          leading-tight
+                          text-center
+                          z-10
+                          inset-y-0
+                          left-0
+                          my-auto
+                          flex
+                          justify-center
+                          content-center
+                        "
+                        ><i class="fas fa-angle-left mt-3"></i
+                      ></label>
+                      <label
+                        for="carousel-2"
+                        class="
+                          next
+                          control-1
+                          w-10
+                          h-10
+                          mr-2
+                          md:mr-10
+                          absolute
+                          cursor-pointer
+                          hidden
+                          font-bold
+                          text-black
+                          hover:text-white
+                          rounded-full
+                          bg-white
+                          hover:bg-purple-700
+                          leading-tight
+                          text-center
+                          z-10
+                          inset-y-0
+                          right-0
+                          my-auto
+                        "
+                        ><i class="fas fa-angle-right mt-3"></i
+                      ></label>
+                  
+                      <!--Imagem 2-->
+                      <input
+                        class="carousel-open"
+                        type="radio"
+                        id="carousel-2"
+                        name="carousel"
+                        aria-hidden="true"
+                        hidden=""
+                      />
+                      <div
+                        class="carousel-item absolute opacity-0 bg-center"
+                        style="
+                          height: 500px;
+                          background-image: url(/imagens/imagem2.png);
+                        "
+                      ></div>
+                      <label
+                        for="carousel-1"
+                        class="
+                          control-2
+                          w-10
+                          h-10
+                          ml-2
+                          md:ml-10
+                          absolute
+                          cursor-pointer
+                          hidden
+                          font-bold
+                          text-black
+                          hover:text-white
+                          rounded-full
+                          bg-white
+                          hover:bg-purple-700
+                          leading-tight
+                          text-center
+                          z-10
+                          inset-y-0
+                          left-0
+                          my-auto
+                        "
+                        ><i class="fas fa-angle-left mt-3"></i
+                      ></label>
+                      <label
+                        for="carousel-3"
+                        class="
+                          next
+                          control-2
+                          w-10
+                          h-10
+                          mr-2
+                          md:mr-10
+                          absolute
+                          cursor-pointer
+                          hidden
+                          font-bold
+                          text-black
+                          hover:text-white
+                          rounded-full
+                          bg-white
+                          hover:bg-purple-700
+                          leading-tight
+                          text-center
+                          z-10
+                          inset-y-0
+                          right-0
+                          my-auto
+                        "
+                        ><i class="fas fa-angle-right mt-3"></i
+                      ></label>
+                  
+                      <!--imagem 3-->
+                      <input
+                        class="carousel-open"
+                        type="radio"
+                        id="carousel-3"
+                        name="carousel"
+                        aria-hidden="true"
+                        hidden=""
+                      />
+                      <div
+                        class="carousel-item absolute opacity-0"
+                        style="
+                          height: 500px;
+                          background-image: url(/imagens/imagem3.png);
+                        "
+                      ></div>
+                      <label
+                        for="carousel-2"
+                        class="
+                          control-3
+                          w-10
+                          h-10
+                          ml-2
+                          md:ml-10
+                          absolute
+                          cursor-pointer
+                          hidden
+                          font-bold
+                          text-black
+                          hover:text-white
+                          rounded-full
+                          bg-white
+                          hover:bg-purple-700
+                          leading-tight
+                          text-center
+                          z-10
+                          inset-y-0
+                          left-0
+                          my-auto
+                        "
+                        ><i class="fas fa-angle-left mt-3"></i
+                      ></label>
+                      <label
+                        for="carousel-1"
+                        class="
+                          next
+                          control-3
+                          w-10
+                          h-10
+                          mr-2
+                          md:mr-10
+                          absolute
+                          cursor-pointer
+                          hidden
+                          font-bold
+                          text-black
+                          hover:text-white
+                          rounded-full
+                          bg-white
+                          hover:bg-purple-700
+                          leading-tight
+                          text-center
+                          z-10
+                          inset-y-0
+                          right-0
+                          my-auto
+                        "
+                        ><i class="fas fa-angle-right mt-3"></i
+                      ></label>
+                  
+                      <!-- Indicador adicional para slide -->
+                      <ol class="carousel-indicators">
+                        <li class="inline-block mr-3">
+                          <label
+                            for="carousel-1"
+                            class="
+                              carousel-bullet
+                              cursor-pointer
+                              block
+                              text-4xl text-white
+                              hover:text-purple-700
+                            "
+                            >•</label
+                          >
+                        </li>
+                        <li class="inline-block mr-3">
+                          <label
+                            for="carousel-2"
+                            class="
+                              carousel-bullet
+                              cursor-pointer
+                              block
+                              text-4xl text-white
+                              hover:text-purple-700
+                            "
+                            >•</label
+                          >
+                        </li>
+                        <li class="inline-block mr-3">
+                          <label
+                            for="carousel-3"
+                            class="
+                              carousel-bullet
+                              cursor-pointer
+                              block
+                              text-4xl text-white
+                              hover:text-purple-700
+                            "
+                            >•</label
+                          >
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+ 
+                  
+
+
+
+            </div>
+            <form class="flex-auto p-6">
+              <div class="flex flex-wrap flex-col">
+                <!-- Titulo do produto -->
+                <h1 class="flex-auto text-2xl font-semibold">
+                  Tênis Masculino - Demon Slayer Kimetsu No Yaiba - Tomioka Giyuu 
+                </h1>
+                <!-- Preço antigo -->
+                <div class="mt-14 text-1xl font-semibold text-gray-500">
+                 <s>R$ 110,00</s> 
+                </div>
+                <!-- Preço Promocional -->
+                <div class="text-2xl font-semibold text-gray-500">
+                    R$ 90,00
+                  </div>
+                  <!-- Preço parcelado -->
+                <div class="w-full flex-none text-sm font-medium text-gray-500 mt-2">
+                  em 6x R$ 15,00
+                  
+                </div>
+
+                <!-- Métodos de pagamento -->
+                <div class="text-purple-500 text-1x1 mt-4">
+                  <a href="#">Veja os métodos de pagamento</a>
+                </div>
+              </div>
+
+            <!-- Checkbox redonda referente ao tamanho do tenis -->
+              <div class="flex items-baseline mt-4 mb-6">
+                <div class="space-x-2 flex">
+                  <label>
+                    <input class="w-6 h-9 flex items-center justify-center bg-gray-100 rounded-lg" name="size" type="radio" value="xs" checked>
+                    39
+                  </label>
+                  <label>
+                    <input class="w-6 h-9 flex items-center justify-center" name="size" type="radio" >
+                    40
+                  </label>
+                  <label>
+                    <input class="w-6 h-9 flex items-center justify-center" name="size" type="radio" >
+                    41
+                  </label>
+                  <label>
+                    <input class="w-6 h-9 flex items-center justify-center" name="size" type="radio" >
+                    42
+                  </label>
+                  <label>
+                    <input class="w-6 h-9 flex items-center justify-center" name="size" type="radio" >
+                    43
+                  </label>
+                </div>
+                <div class="ml-auto text-sm text-gray-500 underline"> Guia de Tamanhos</div>
+              </div>
+              <div class="flex space-x-3 mb-4 text-sm font-medium">
+
+                <!-- Botões para "comprar agora" e "adicionar ao carrinho" -->
+                <div class="flex-auto flex space-x-5">
+                  <button class="w-1/2 flex items-center justify-center rounded-md bg-purple-400 text-white hover:bg-purple-800" type="submit">Comprar agora</button>
+                  <button class="w-1/2 flex items-center justify-center rounded-md border border-purple-400 hover:bg-gray-100" type="button">Adicionar ao carrinho</button>
+                </div>
+                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-purple-400 hover:bg-gray-100" type="button" aria-label="like">
+                  <svg width="20" height="20" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                  </svg>
+                </button>
+                <!-- Entrega com pequeno emoji de truck -->
+              </div>
+              <p class="text-sm text-gray-500">
+                <i class="fa fa-truck" aria-hidden="true"></i> Entrega grátis para Sul e Sudeste
+              </p>
+            </form>
+          </div>
+    </div>
+
+</section>
+
+<article class="flex max-w-screen-2xl mx-auto mt-24">
+  <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+    <div class="px-4 py-5 sm:px-6">
+      <h3 class="text-lg leading-6 font-medium text-gray-900">
+        Descrição do Produto
+      </h3>
+    </div>
+    <div class="border-t border-gray-200">
+      <dl>
+        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="text-sm font-medium text-gray-500">
+            Nome
+          </dt>
+          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+            Tênis Masculino - Demon Slayer Kimetsu No Yaiba - Tomioka Giyuu
+          </dd>
+        </div>
+        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="text-sm font-medium text-gray-500">
+            Importante
+          </dt>
+          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+            O calçado possui formato mais justo no pé.
+          </dd>
+        </div>
+        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="text-sm font-medium text-gray-500">
+            Categoria
+          </dt>
+          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+            Leveza/Velocidade
+          </dd>
+        </div>
+        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="text-sm font-medium text-gray-500">
+            Composição
+          </dt>
+          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+            Cabedal: Confeccionado em material leve, macio e flexível, que proporciona excelente ventilação interna. Entressola: Em EVA que fornece amortecimento e estabilidade durante as passadas. Solado: Em borracha que fornece aderência e tração em cada passo.
+          </dd>
+        </div>
+        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="text-sm font-medium text-gray-500">
+            Origem
+          </dt>
+          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+            Estrangeira - Adquirida no mercado interno
+                    </dd>
+        </div>
+        </div>
+      </dl>
+    </div>
+  </div>
+</article>
+
+<!-- Footer da pagina -->
+<hr class="mt-10">
+<footer class=" text-gray-600 body-font">
+  <div
+    class="container
+      px-5
+      py-24
+      mx-auto
+      flex
+      md:items-center
+      lg:items-start
+      md:flex-row md:flex-nowrap
+      flex-wrap flex-col
+    "
+  >
+    <div
+      class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left"
+    >
+      <a
+        href=""
+        class="
+          flex
+          title-font
+          font-medium
+          items-center
+          md:justify-start
+          justify-center
+          text-gray-900
+        "
+      >
+        <i class="fas fa-cubes fa-lg text-purple-500"></i>
+        <span class="ml-3 text-xl">Yaiba Store</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-500">
+        Loja especializada em produtos estilizados
+      </p>
+    </div>
+    <div
+      class="
+        flex-grow flex flex-wrap
+        md:pl-20
+        -mb-10
+        md:mt-0
+        mt-10
+        md:text-left
+        text-center
+      "
+    >
+      <div class="lg:w-1/4 md:w-1/2 w-full px-12">
+        <h2
+          class="
+            title-font
+            font-medium
+            text-gray-900
+            tracking-widest
+            text-sm
+            mb-3
+          "
+        >
+          Falo Conosco
+        </h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="" class="text-gray-600 hover:text-gray-800"
+              >Telefone</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-gray-600 hover:text-gray-800"
+              >Email</a
+            >
+          </li>
+
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-12">
+        <h2
+          class="
+            title-font
+            font-medium
+            text-gray-900
+            tracking-widest
+            text-sm
+            mb-3
+          "
+        >
+          CATEGORIAS
+        </h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="" class="text-gray-600 hover:text-gray-800"
+              >Tênis</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-gray-600 hover:text-gray-800"
+              >Acesórios</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-gray-600 hover:text-gray-800"
+              >Camisas</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-gray-600 hover:text-gray-800"
+              >Calças</a
+            >
+          </li>
+        </nav>
+      </div>
+
+          
+
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gradient-to-r from-gray-100 to-gray-200">
+    <div
+      class="
+        container
+        mx-auto
+        py-4
+        px-5
+        flex flex-wrap flex-col
+        sm:flex-row
+      "
+
+      
+    >
+      <p class="text-gray-500 text-sm text-center sm:text-left">
+        © 2021 Copyright: Diego Lima
+
+      </p>
+      <span
+        class="
+          inline-flex
+          sm:ml-auto sm:mt-0
+          mt-2
+          justify-center
+          sm:justify-start
+        "
+      >
+        <a href="https://www.facebook.com/roronoadiego/" target= "_blank" class="text-gray-500">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/dieguitomg" target= "_blank" class="ml-3 text-gray-500">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/devdiegolima/" target= "_blank" class="ml-3 text-gray-500">
+          <i class="fab fa-linkedin-in"></i>
+
+        <a href="https://www.instagram.com/truediegolima/?hl=pt-br" target= "_blank" class="ml-3 text-gray-500">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
